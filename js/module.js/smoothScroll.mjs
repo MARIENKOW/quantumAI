@@ -35,7 +35,7 @@ function smoothScrollWrapper(){
             }
             window.scrollTo(0,window.scrollY+step);
 
-            if(previusPosition!=null &&  previusPosition >= window.scrollY ) return previusPosition = null;
+            if(previusPosition!=null &&  previusPosition === window.scrollY ) return previusPosition = null;
             previusPosition = window.scrollY;
             scrollBottom()
          },speed)
@@ -48,13 +48,13 @@ function smoothScrollWrapper(){
             }
             window.scrollTo(0,window.scrollY-step);
 
-            if(previusPosition!=null && previusPosition <= window.scrollY) return previusPosition = null
+            if(previusPosition!=null && previusPosition === window.scrollY) return previusPosition = null
             previusPosition = window.scrollY;
             scrollTop()
          },speed)
       }
       const whereToScroll = toScroll(element,position);
-      if(!whereToScroll)return;
+      if(whereToScroll==='undefind')return;
 
       if(whereToScroll>window.scrollY)scrollBottom()
       if(whereToScroll<window.scrollY)scrollTop()
