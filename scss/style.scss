@@ -110,6 +110,26 @@ body{
          transform: translateY(0);
       }
    }
+   &--no{
+      &:hover{
+         border: 0px solid transparent;
+         cursor: auto;
+         color: #fff !important;
+         &::after{
+            display: none;
+         }
+      }
+      @media (max-width:768px) {
+         &:hover{
+            border: 3px solid $color-blue;
+            color: $color-blue !important;
+            cursor: pointer;
+            &::after{
+               display: inline-block;
+            }
+         }
+      }
+   }
 }
 
 .header {
