@@ -33,9 +33,11 @@ function smoothScrollWrapper(){
                window.scrollTo(0,whereToScroll);
                return previusPosition = null
             }
+            if(window.scrollY+step > document.body.clientHeight  - window.innerHeight){
+               window.scrollTo(0,document.body.clientHeight  - window.innerHeight);
+               return previusPosition = null;
+            }
             window.scrollTo(0,window.scrollY+step);
-
-            if(previusPosition!=null &&  previusPosition === window.scrollY ) return previusPosition = null;
             previusPosition = window.scrollY;
             scrollBottom()
          },speed)
@@ -46,9 +48,11 @@ function smoothScrollWrapper(){
                window.scrollTo(0,whereToScroll);
                return previusPosition = null
             }
+            if(window.scrollY-step < 0) {
+               window.scrollTo(0,0);
+               return previusPosition = null;
+            }
             window.scrollTo(0,window.scrollY-step);
-
-            if(previusPosition!=null && previusPosition === window.scrollY) return previusPosition = null
             previusPosition = window.scrollY;
             scrollTop()
          },speed)
