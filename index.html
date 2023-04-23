@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +8,38 @@
    <link rel="stylesheet" href="css/style.css">
    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,600,700,800" rel="stylesheet" />
    <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,700" rel="stylesheet" />
+   <svg style="display:none">
+      <symbol id="telegram" viewBox="0 0 21 18">
+         <g>
+            <path d="M18.0169 0.117465C18.264 0.013456 18.5345 -0.022416 18.8002 0.0135823C19.0659 0.0495806 19.317 0.156133 19.5276 0.32215C19.7381 0.488167 19.9003 0.707579 19.9973 0.957548C20.0942 1.20752 20.1224 1.47891 20.0789 1.74347L17.8109 15.5005C17.5909 16.8275 16.1349 17.5885 14.9179 16.9275C13.8999 16.3745 12.3879 15.5225 11.0279 14.6335C10.3479 14.1885 8.26489 12.7635 8.52089 11.7495C8.74089 10.8825 12.2409 7.62446 14.2409 5.68747C15.0259 4.92647 14.6679 4.48747 13.7409 5.18747C11.4379 6.92547 7.74289 9.56847 6.52089 10.3125C5.44289 10.9685 4.88089 11.0805 4.20889 10.9685C2.98289 10.7645 1.84589 10.4485 0.917888 10.0635C-0.336112 9.54347 -0.275112 7.81947 0.916888 7.31747L18.0169 0.117465Z"/>
+         </g>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 19 19">
+         <g>
+            <path  d="M9.19238 5.95703C8.33043 5.95703 7.50378 6.29944 6.89429 6.90893C6.28479 7.51843 5.94238 8.34508 5.94238 9.20703C5.94238 10.069 6.28479 10.8956 6.89429 11.5051C7.50378 12.1146 8.33043 12.457 9.19238 12.457C10.0543 12.457 10.881 12.1146 11.4905 11.5051C12.1 10.8956 12.4424 10.069 12.4424 9.20703C12.4424 8.34508 12.1 7.51843 11.4905 6.90893C10.881 6.29944 10.0543 5.95703 9.19238 5.95703Z"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.9622 0.288975C7.43823 -0.0963249 10.9462 -0.0963249 14.4222 0.288975C16.3212 0.500975 17.8522 1.99597 18.0752 3.90197C18.4874 7.42663 18.4874 10.9873 18.0752 14.512C17.8522 16.418 16.3212 17.913 14.4232 18.126C10.9469 18.5114 7.43855 18.5114 3.9622 18.126C2.0632 17.913 0.532204 16.418 0.309204 14.513C-0.103068 10.988 -0.103068 7.42696 0.309204 3.90197C0.532204 1.99597 2.0632 0.500975 3.9622 0.288975ZM14.1922 3.20697C13.927 3.20697 13.6726 3.31233 13.4851 3.49987C13.2976 3.6874 13.1922 3.94176 13.1922 4.20697C13.1922 4.47219 13.2976 4.72654 13.4851 4.91408C13.6726 5.10162 13.927 5.20697 14.1922 5.20697C14.4574 5.20697 14.7118 5.10162 14.8993 4.91408C15.0868 4.72654 15.1922 4.47219 15.1922 4.20697C15.1922 3.94176 15.0868 3.6874 14.8993 3.49987C14.7118 3.31233 14.4574 3.20697 14.1922 3.20697ZM4.4422 9.20697C4.4422 7.9472 4.94265 6.73902 5.83345 5.84822C6.72424 4.95742 7.93243 4.45697 9.1922 4.45697C10.452 4.45697 11.6602 4.95742 12.551 5.84822C13.4418 6.73902 13.9422 7.9472 13.9422 9.20697C13.9422 10.4668 13.4418 11.6749 12.551 12.5657C11.6602 13.4565 10.452 13.957 9.1922 13.957C7.93243 13.957 6.72424 13.4565 5.83345 12.5657C4.94265 11.6749 4.4422 10.4668 4.4422 9.20697Z"/>
+         </g>
+      </symbol>
+      <symbol id="arrow" viewBox="0 0 31 21">
+         <g>
+            <path d="M1.83332 10.5L29.1667 10.5M29.1667 10.5L18.9167 19.75M29.1667 10.5L18.9167 1.25" stroke-width="2"/>
+         </g>
+      </symbol>
+   </svg>
 </head>
 <body>
    <header class="header">
       <div class="container">
          <div class="header__inner">
             <div  data-spoiler  class="header__button">
-               <span class="header__title">navigation</span>
+               <span class="header__title">Navigation</span>
                <button class="header__burger">
                   <span></span>
                </button>
             </div>
             <nav class="header__navigation">
                <div class="header__navigation--in">
-                  <a data-scroll="main" href="#" class="header__link">main</a>
+                  <a data-scroll="main" href="#" class="header__link">home</a>
                   <a data-scroll="testing" href="#" class="header__link">test period</a>
                   <a data-scroll="escort" href="#" class="header__link">escort</a>
                   <a data-scroll="ways" href="#" class="header__link">directions</a>
@@ -42,7 +60,7 @@
                <section class="screen__top">
                   <img src="img/logo.png" alt="logo" class="screen__logo">
                   <span class="screen__line"></span>
-                  <h3 class="screen__title">main</h3>
+                  <h3 class="screen__title">home</h3>
                </section>
                <section class="screen__body intro">
                   <div class="screenPhoto__left">
@@ -84,10 +102,10 @@
                <section class="screen__body testing">
                   <div class="screenPhoto__left testing__left">
                      <h1 class="testing__title">
-                        Test period
+                        Тестируй
                      </h1>
                      <p class="testing__text">
-                        Minimum deposit <br>
+                        Minimum deposit<br>
                         for testing a robot trader - this is a unique opportunity to test its capabilities and explore financial markets without risks
                      </p>
                      <button class="btn testing__btn">
@@ -125,6 +143,225 @@
             </div>
          </div>
       </section>
+      <section id="ways" class="screen screen--ways">
+         <div class="screen__inner screenPhoto__inner">
+            <div class="container screen__container">
+               <section class="screen__top">
+                  <img src="img/logo.png" alt="logo" class="screen__logo">
+                  <span class="screen__line"></span>
+                  <h3 class="screen__title">SUPPORT</h3>
+               </section>
+               <section class="screen__body ways">
+                  <div class="ways__block">
+                     <button data-spoiler="768" class="ways__btn btn">
+                        <span>
+                           Forex market
+                        </span>
+                        <span>
+                           <svg class="ways__btnSvg">
+                              <use xlink:href="#arrow"></use>
+                           </svg>
+                        </span>
+                     </button>
+                     <div class="ways__wrapper">
+                        <p class="ways__text">Trading in the foreign exchange market with the help of artificial intelligence trading robots allows you to increase the efficiency of the trading process, reduce risks and increase the return on investment, especially when using optimal strategies and robot settings.</p>
+                        <a data-contacts href="#" class="ways__link">
+                           <span>To learn more</span>
+                           <span>
+                              <svg class="ways__svg">
+                                 <use xlink:href="#arrow"></use>
+                              </svg>
+                           </span>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="ways__block ways__block--right">
+                     <button data-spoiler="768" class="ways__btn btn">
+                        <span>
+                           Stock market
+                        </span>
+                        <span>
+                           <svg class="ways__btnSvg">
+                              <use xlink:href="#arrow"></use>
+                           </svg>
+                        </span>
+                     </button>
+                     <div class="ways__wrapper">
+                        <p class="ways__text">Stock market trading robots can also use machine learning algorithms to analyze historical data and identify trends. This helps them make decisions based on more accurate forecasts and minimize risks. In addition, the use of trading robots allows traders to keep their emotions out of the way and avoid emotional mistakes when making trading decisions.</p>
+                        <a data-contacts href="#" class="ways__link">
+                           <span>To learn more</span>
+                           <span>
+                              <svg class="ways__svg">
+                                 <use xlink:href="#arrow"></use>
+                              </svg>
+                           </span>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="ways__block">
+                     <button data-spoiler="768" class="ways__btn btn">
+                        <span>
+                           Cryptocurrency Market
+                        </span>
+                        <span>
+                           <svg class="ways__btnSvg">
+                              <use xlink:href="#arrow"></use>
+                           </svg>
+                        </span>
+                     </button>
+                     <div class="ways__wrapper">
+                        <p class="ways__text">Trading robots in the cryptocurrency market can not only analyze news, but also use machine learning and analytics to predict prices for cryptocurrencies. This allows them to predict future price changes and make quick buying and selling decisions to maximize returns for investors.</p>
+                        <a data-contacts href="#" class="ways__link">
+                           <span>To learn more</span>
+                           <span>
+                              <svg class="ways__svg">
+                                 <use xlink:href="#arrow"></use>
+                              </svg>
+                           </span>
+                        </a>
+                     </div>
+                     
+                  </div>
+                  
+               </section>
+            </div>
+         </div>
+      </section>
+      <section id="portfolio" class="screen screen--portfolio">
+         <div class="screen__inner screenPhoto__inner">
+            <div class="container screen__container">
+               <section class="screen__top">
+                  <img src="img/logo.png" alt="logo" class="screen__logo">
+                  <span class="screen__line"></span>
+                  <h3 class="screen__title">SUPPORT</h3>
+               </section>
+               <section class="screen__body portfolio">
+                  <section class="portfolio__block">
+                     <img src="img/portfolio/block-img-1.png" alt="block-1">
+                     <section class="portfolio__middle">
+                        <img src="img/portfolio/vector-1.png" alt="icom-1">
+                        <div class="portfolio__right">
+                           <div class="portfolio__title">Aggressive</div>
+                           <div class="portfolio__subtitle">+134% per annum</div>
+                        </div>
+                     </section>
+                     <div class="portfolio__text">
+                        A trading robot with artificial intelligence and an aggressive strategy is able to carry out<span> quick deals</span> in the financial markets in order to obtain<span> high yield</span>. Thanks to algorithms and market analysis, such a robot<span> can react to the slightest price changes</span> and conduct transactions in real time. However, it is worth remembering the possible risks and losses associated with the use of an aggressive strategy.
+                     </div>
+                     <button data-contacts class="portfolio__btn btn" btn>
+                        <span>
+                           Connect to Portfolio
+                        </span>
+                     </button>
+                  </section>
+                  <section class="portfolio__block">
+                     <img src="img/portfolio/block-img-2.png" alt="block-1">
+                     <section class="portfolio__middle">
+                        <img src="img/portfolio/vector-2.png" alt="icom-1">
+                        <div class="portfolio__right">
+                           <div class="portfolio__title">Moderate</div>
+                           <div class="portfolio__subtitle">+75% per annum</div>
+                        </div>
+                     </section>
+                        <div class="portfolio__text">
+                           As a rule, trading robots with a balanced strategy<span> allow you to receive a stable income</span> at relatively <span>low risk</span>. They can use various indicators and algorithms to make trade decisions, and they can analyze market data and news to<span> improve your efficiency</span>. Such a robot may be of interest to investors who are looking for<span> a more conservative approach to trading</span>.
+                     </div>
+                     <button data-contacts class="portfolio__btn btn" btn>
+                        <span>
+                           Connect to Portfolio
+                        </span>
+                     </button>
+                  </section>
+                  <section class="portfolio__block">
+                     <img src="img/portfolio/block-img-3.png" alt="block-1">
+                     <section class="portfolio__middle">
+                        <img src="img/portfolio/vector-3.png" alt="icom-1">
+                        <div class="portfolio__right">
+                           <div class="portfolio__title">Conservative</div>
+                           <div class="portfolio__subtitle">+37% per annum</div>
+                        </div>
+                     </section>
+                     <div class="portfolio__text">
+                        Trading robot with <span>artificial intelligence</span>, using a conservative strategy, carries out trading operations in financial markets <span>with care and focus on capital preservation</span>. It analyzes market data and makes decisions to buy or sell assets on <span>based on risk minimization</span> and achieve sustainable returns.
+                     </div>
+                     <button data-contacts class="portfolio__btn btn" btn>
+                        <span>
+                           Connect to Portfolio
+                        </span>
+                     </button>
+                  </section>
+               </section>
+            </div>
+         </div>
+      </section>
+      <section id="whyUs" class="screen screen--whyUs">
+         <div class="screen__inner screenPhoto__inner">
+            <div class="container screen__container">
+               <section class="screen__top">
+                  <img src="img/logo.png" alt="logo" class="screen__logo">
+                  <span class="screen__line"></span>
+                  <h3 class="screen__title">WHY CHOOSE US</h3>
+               </section>
+               <section class="screen__body whyUs">
+                  <div class="whyUs__inner">
+                     <section class="whyUs__main">
+                        <div class="whyUs__spoiler">
+                           <div class="whyUs__block">
+                              <h3 class="whyUs__subtitle">Почему QuantumAI?</h3>
+                              <p class="whyUs__text">We strive to surprise our customers and provide a personalized approach to every situation. Our team is constantly developing and finding new ways to ensure comfortable and effective cooperation with our company.</p>
+                              <a data-contacts href="#" class="whyUs__link">
+                                 <span>Submit your application</span>
+                                 <span>
+                                    <svg class="whyUs__svg">
+                                       <use xlink:href="#arrow"></use>
+                                    </svg>
+                                 </span>
+                              </a>
+                           </div>
+                           <div class="whyUs__block">
+                              <h3 class="whyUs__subtitle">Personal manager</h3>
+                              <p class="whyUs__text">Our personal financial manager is ready to provide personal assistance in developing an investment strategy, monitoring investments and issuing recommendations. In addition, we can tailor your investment portfolio to suit your goals and provide up-to-date information on the situation in the financial markets.</p>
+                              <a data-contacts href="#" class="whyUs__link">
+                                 <span>Submit your application</span>
+                                 <span>
+                                    <svg class="whyUs__svg">
+                                       <use xlink:href="#arrow"></use>
+                                    </svg>
+                                 </span>
+                              </a>
+                           </div>
+                           <div class="whyUs__block">
+                              <h3 class="whyUs__subtitle">Management of risks</h3>
+                              <p class="whyUs__text">Risk management in financial markets with the help of a trading robot includes the use of algorithms and strategies that minimize potential losses. The trading robot can automatically set stop loss and take profit levels, monitor and respond to price changes. This allows you to reduce risks and protect investments.</p>
+                              <a data-contacts href="#" class="whyUs__link">
+                                 <span>Submit your application</span>
+                                 <span>
+                                    <svg class="whyUs__svg">
+                                       <use xlink:href="#arrow"></use>
+                                    </svg>
+                                 </span>
+                              </a>
+                           </div>
+                           <div class="whyUs__block">
+                              <h3 class="whyUs__subtitle">Self-learning trading robot</h3>
+                              <p class="whyUs__text">A self-learning AI trading robot is software that uses machine learning algorithms to analyze market data and improve its trading strategy automatically. Thanks to this, he can adapt to changes in the market and achieve better trading results.
+                              </p>
+                              <a data-contacts href="#" class="whyUs__link">
+                                 <span>Submit your application</span>
+                                 <span>
+                                    <svg class="whyUs__svg">
+                                       <use xlink:href="#arrow"></use>
+                                    </svg>
+                                 </span>
+                              </a>
+                           </div>
+                        </div>
+                     </section>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </section>
       <section id="contacts" class="screen screen--contacts">
          <div class="screen__inner screenPhoto__inner">
             <div class="container screen__container">
@@ -144,7 +381,7 @@
                               <input data-type = 'mail' class="contacts__input" placeholder="Email" type="email">
                            </span>
                            <span class="contacts__wrapper contacts__wrapper--surname">
-                              <input data-type = 'surname' class="contacts__input" placeholder="Surname" type="text">
+                              <input data-type = 'surname' class="contacts__input" placeholder="your Surname" type="text">
                            </span>
                            <span class="contacts__wrapper contacts__wrapper--phone">
                               <input data-type = 'phone' class="contacts__input" placeholder="Phone" type="number">
@@ -170,6 +407,67 @@
          </div>
       </section>
    </main>
+   <footer class="footer">
+      <section class="footer__top">
+         <div class="container">
+            <div class="footer__inner">
+               <section class="footer__info">
+                  <img src="img/logo.png" alt="logo">
+                  <div class="footer__politic">
+                     <a href="#" class="footer__pdf">Legal Information</a>
+                     <a href="#" class="footer__pdf">Privacy Policy</a>
+                  </div>
+                  <div class="footer__social">
+                     <a href="#">
+                        <svg class="footer__svg">
+                           <use xlink:href="#telegram"></use>
+                        </svg>
+                     </a>
+                     <a href="#">
+                        <svg class="footer__svg">
+                           <use xlink:href="#instagram"></use>
+                        </svg>
+                     </a>
+                  </div>
+               </section>
+               <sectin class="footer__navigation">
+                  <a data-scroll="main" href="#" class="footer__link">home</a>
+                  <a data-scroll="testing" href="#" class="footer__link">test period</a>
+                  <a data-scroll="escort" href="#" class="footer__link">escort</a>
+                  <a data-scroll="ways" href="#" class="footer__link">directions</a>
+               </sectin>
+               <sectin class="footer__navigation">
+                  <a data-scroll="portfolio" href="#" class="footer__link">our robots</a>
+                  <a data-scroll="whyUs" href="#" class="footer__link">why us?</a>
+                  <a data-scroll="contacts" href="#" class="footer__link">contacts</a>
+               </sectin>
+               <section class="footer__mobile">
+                  <button data-spoiler='956' class="footer__monileBtn btn">
+                     <span>navigation</span>
+                     <span class="footer__mobileArrow"></span>
+                  </button>
+                  <section class="_navigations footer__mobileNav">
+                     <a data-scroll="main" href="#" class="footer__mobileLink">home</a>
+                     <a data-scroll="testing" href="#" class="footer__mobileLink">test period</a>
+                     <a data-scroll="escort" href="#" class="footer__mobileLink">escort</a>
+                     <a data-scroll="destinations" href="#" class="footer__mobileLink">directions</a>
+                     <a data-scroll="ways" href="#" class="footer__mobileLink">our robots</a>
+                     <a data-scroll="whyUs" href="#" class="footer__mobileLink">why us?</a>
+                     <a data-scroll="contacts" href="#" class="footer__mobileLink">contacts</a>
+                  </section>
+               </section>
+               <section class="footer__view">
+                  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+               </section>
+            </div>
+         </div>
+      </section>
+      <section class="footer__bottom">
+         <div class="container">
+            <h5 class="footer__copyright">© QUANTUMAI. All rights reserved. 2023 year.</h5>
+         </div>
+      </section>
+   </footer>
    <script type="module" src="js/sendToPHP.mjs"></script>
    <script type="module" src="js/app.mjs"></script>
 </body>

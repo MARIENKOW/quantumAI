@@ -1,6 +1,10 @@
 import { smoothScroll } from "./module.js/smoothScroll.mjs";
 import { spoilerFlex } from "./module.js/spoiler.mjs";
 spoilerFlex();
+
+window.addEventListener('resize',event=>{
+   spoilerFlex()
+})
 const contactsScroll = document.querySelectorAll('[data-contacts]');
 if(contactsScroll.length != 0){
    for(let i =0; i < contactsScroll.length;i++){
