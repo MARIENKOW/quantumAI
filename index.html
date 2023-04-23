@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,33 @@
    <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,700" rel="stylesheet" />
 </head>
 <body>
+   <header class="header">
+      <div class="container">
+         <div class="header__inner">
+            <div  data-spoiler  class="header__button">
+               <span class="header__title">navigation</span>
+               <button class="header__burger">
+                  <span></span>
+               </button>
+            </div>
+            <nav class="header__navigation">
+               <div class="header__navigation--in">
+                  <a data-scroll="main" href="#" class="header__link">main</a>
+                  <a data-scroll="testing" href="#" class="header__link">test period</a>
+                  <a data-scroll="escort" href="#" class="header__link">escort</a>
+                  <a data-scroll="ways" href="#" class="header__link">directions</a>
+                  <a data-scroll="portfolio" href="#" class="header__link">our robots</a>
+                  <a data-scroll="whyUs" href="#" class="header__link">why us?</a>
+                  <a data-scroll="contacts" href="#" class="header__link">contacts</a>
+               </div>
+               
+            </nav>
+         </div>
+         
+      </div>
+   </header>
    <main>
-      <section class="intro screen">
+      <section id="main" class="screen screen--intro">
          <div class="screen__inner screenPhoto__inner">
             <div class="container screen__container">
                <section class="screen__top">
@@ -48,7 +73,104 @@
             </div>
          </div>
       </section>
+      <section id="testing" class="screen screen--testing">
+         <div class="screen__inner screenPhoto__inner">
+            <div class="container screen__container">
+               <section class="screen__top">
+                  <img src="img/logo.png" alt="logo" class="screen__logo">
+                  <span class="screen__line"></span>
+                  <h3 class="screen__title">Test period</h3>
+               </section>
+               <section class="screen__body testing">
+                  <div class="screenPhoto__left testing__left">
+                     <h1 class="testing__title">
+                        Test period
+                     </h1>
+                     <p class="testing__text">
+                        Minimum deposit <br>
+                        for testing a robot trader - this is a unique opportunity to test its capabilities and explore financial markets without risks
+                     </p>
+                     <button class="btn testing__btn">
+                        <span>
+                           Try a robot
+                        </span>
+                     </button>
+                  </div>
+                  <img src="img/testing/right-img.png" alt="right-img" class="testing__right screenPhoto__img">
+               </section>
+            </div>
+         </div>
+      </section>
+      <section id="escort" class="screen screen--escort">
+         <div class="screen__inner screenPhoto__inner">
+            <div class="container screen__container">
+               <section class="screen__top">
+                  <img src="img/logo.png" alt="logo" class="screen__logo">
+                  <span class="screen__line"></span>
+                  <h3 class="screen__title">SUPPORT</h3>
+               </section>
+               <section class="screen__body escort">
+                  <h1 class="escort__title">
+                     Accompaniment from the best specialists in the field of finance
+                  </h1>
+                  <p class="escort__text">
+                     Reliable financial support is the key to your financial stability and success!
+                  </p>
+                  <button class="btn escort__btn">
+                     <span>
+                        SIGN UP FOR A CONSULTATION
+                     </span>
+                  </button>
+               </section>
+            </div>
+         </div>
+      </section>
+      <section id="contacts" class="screen screen--contacts">
+         <div class="screen__inner screenPhoto__inner">
+            <div class="container screen__container">
+               <section class="screen__top">
+                  <img src="img/logo.png" alt="logo" class="screen__logo">
+                  <span class="screen__line"></span>
+                  <h3 class="screen__title">CONTACT US</h3>
+               </section>
+               <section class="screen__body contacts">
+                  <div class="contacts__inner">
+                     <form action="#" class="contacts__form">
+                        <section class="contacts__main">
+                           <span class="contacts__wrapper contacts__wrapper--name">
+                              <input data-type = 'name' class="contacts__input" placeholder="your name" type="text">
+                           </span>
+                           <span class="contacts__wrapper contacts__wrapper--mail">
+                              <input data-type = 'mail' class="contacts__input" placeholder="Email" type="email">
+                           </span>
+                           <span class="contacts__wrapper contacts__wrapper--surname">
+                              <input data-type = 'surname' class="contacts__input" placeholder="Surname" type="text">
+                           </span>
+                           <span class="contacts__wrapper contacts__wrapper--phone">
+                              <input data-type = 'phone' class="contacts__input" placeholder="Phone" type="number">
+                           </span>
+                           <span class="contacts__wrapper contacts__wrapper--question">
+                              <input data-type = 'question' class="contacts__input contacts__input--question" placeholder="question" type="text">
+                           </span>
+                        </section>
+                        <section class="contacts__bottom">
+                           <button class="_ajaxFormSend btn contacts__btn"><span>send</span></button>
+                           <div class="contacts__personal">
+                              <a href="mailto:info@suntex.io" class="contacts__mail">info@suntex.io</a>
+                              <div class="contacts__phone">
+                                 <a  href="tel:+1 000 000 00 00" class="contacts__number">+1 000 000 00 00</a>
+                                 <span>(GMT -4)</span>
+                              </div>
+                           </div>
+                        </section>
+                     </form>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </section>
    </main>
+   <script type="module" src="js/sendToPHP.mjs"></script>
    <script type="module" src="js/app.mjs"></script>
 </body>
 </html>

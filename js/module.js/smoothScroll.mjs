@@ -11,7 +11,9 @@ function smoothScrollWrapper(){
       }else if(element === 'bottom'){
             elementPosition = document.body.clientHeight  - window.innerHeight
       }else{
-            const elementInfo = document.querySelector(element).getBoundingClientRect()
+            const elementIn = document.querySelector(element);
+            if(!elementIn) return
+            const elementInfo = elementIn.getBoundingClientRect();
             if(position === 'top'){
                   elementPosition = window.scrollY + elementInfo.top
             }else if(position ==='bottom'){
@@ -52,6 +54,7 @@ function smoothScrollWrapper(){
          },speed)
       }
       const whereToScroll = toScroll(element,position);
+      if(!whereToScroll)return;
 
       if(whereToScroll>window.scrollY)scrollBottom()
       if(whereToScroll<window.scrollY)scrollTop()
