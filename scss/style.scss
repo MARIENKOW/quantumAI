@@ -995,7 +995,7 @@ body{
 
    &__social {
       display: flex;
-      max-width: 160px;
+      max-width: 70px;
       justify-content:space-between;
       gap: 15px;
    }
@@ -1106,21 +1106,6 @@ body{
    &__copyright {
       color: #fff;
       font-size: 12px;
-   }
-   &__view{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: calc(100% + 80px);
-      display: flex;
-      justify-content: space-between;
-      pointer-events: none;
-      span{
-         display: inline-block;
-         width: 60px;
-         background-color:#ff00001e
-      }
    }
 }
 
